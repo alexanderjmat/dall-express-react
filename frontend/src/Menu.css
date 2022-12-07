@@ -1,0 +1,60 @@
+.Menu {
+    display: flex;
+    flex-direction: row;
+    width: 100vh;
+
+}
+.Menu__Header {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 2em;
+}
+.Menu__Header h1 {
+    display: flex;
+    font-family: "Anek Telugu";
+    font-weight: 300;
+    margin-left: 1em;
+    margin-top: 0.75em;
+
+}
+.Menu__Header a {
+    text-decoration: none;
+    color: black;
+}
+.Menu__Header img {
+    height: 80px;
+    width: 60px;
+}
+
+.Menu__Navbar-1, .Menu__Navbar-2 {
+    display: block;
+    width: 30vw;
+    max-width: 30vw;
+    padding-left: 20em;
+}
+
+.--menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-top: 2em;
+    width: 30vw;
+    
+}
+
+.--menu li a {
+    display: flex;
+    padding-right: 6em;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: "Anek Telugu";
+    font-weight: 300;
+    color: black
+
+}
+
+.Raleway {
+    font-family: "Raleway";
+    font-weight: 400;
+}

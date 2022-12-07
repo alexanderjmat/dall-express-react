@@ -1,0 +1,750 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Anek Telugu', sans-serif;
+
+}
+
+html, body {
+  height: fit-content;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+a {
+  color: black;
+}
+
+p {
+  font-family: 'Anek Telugu', sans-serif;
+  font-size: 1.1em;
+
+}
+
+footer {
+  display: flex;
+  height: 100px;
+}
+
+.App {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  max-height: 80px;
+}
+
+.App .logo-heading {
+  display: flex;
+  flex-direction: row;
+}
+
+.App .logo {
+  height: 80px;
+  width: 60px;
+  display: inline-block;
+  margin-left: 2vw;
+}
+
+.heading {
+  font-size: 2em;
+  font-family: Aboreto, cursive;
+  margin-top: 30px;
+  margin-left: 1vw;
+  z-index: 10;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+::placeholder {
+  color: black;
+  font-family: 'Anek Telugu', sans-serif;
+  font-size: 1.1em;
+
+}
+
+.items {
+  display: inline-block;
+  margin-top: 35px;
+  margin-right: 2vw;
+  word-spacing: 2em;
+}
+
+#login, #signup {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  font-family: Aboreto, cursive;
+  font-size: x-large;
+  color: black;
+  justify-content: end;
+
+}
+
+#cart {
+  margin-right: 3em;
+  height: 110%;
+}
+
+.homepage .navigation {
+  display: flex;
+  flex-direction: row;
+}
+
+.homepage .cart-login-signup {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-top: 2.25em;
+  margin-right: 2em;
+
+}
+
+.cart-login-signup ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+
+}
+.cart-login-signup ul li {
+  padding-left: 2em;
+  padding-right: 2em;
+
+}
+
+.navigation ul {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2.5em;
+  list-style: none;
+}
+
+.navigation ul li {
+  padding-left: 4em;
+  padding-right: 4em;
+
+
+}
+
+
+
+.navigation-main-ul li{
+  display: flex;
+}
+
+
+
+#about, #marketplace, #contact {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  color: black;
+  font-size: 1.2em;
+}
+
+#menu-content-hr {
+  margin-top: 1.5em;
+}
+
+
+.content {
+  display: flex;
+  width: 100vw;
+  height: 600px;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.95);
+
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  margin-top: 4em;
+
+}
+
+.boxleft {
+  display: flex;
+  height: 100px;
+  width: 100px;
+}
+
+.boxright {
+  display: flex;
+  height: 100px;
+  width: 100px;
+}
+
+
+#box-1-heading {
+  display: flex;
+  color: white;
+  font-size: 4em;
+  margin-top: 0.5em;
+  font-family: Montserrat, sans-serif;
+  z-index: 10;
+}
+
+#box-1-description {
+  display: flex;
+  color: white;
+  font-size: 2.5em;
+  margin-top: 4em;
+  font-weight: 400;
+  font-family: Montserrat, sans-serif;
+  z-index: 10;
+
+}
+
+.new-arrivals {
+  display: flex;
+  height: 500px;
+  overflow-y: scroll;
+  background-color: rgba(230, 230, 230, 0.9);
+}
+.new-arrivals .header {
+  display: flex;
+  height: fit-content;
+  width: 5em;
+  flex-direction: row;
+  margin-top: 1.5em;
+  margin-left: 3em;
+  font-weight: 400;
+  font-size: 2em;
+}
+
+.new-arrivals .images {
+  display:flex;
+  flex-direction: row;
+  margin-top: 10em;
+  margin-left: -7.5em;
+
+
+
+}
+
+.new-arrivals .image {
+  display:flex;
+  height: 200px;
+  width: 200px;
+  border: none;
+  padding-left: 1em;
+  padding-right: 1em;
+
+
+}
+
+.new-arrivals .link {
+  display:flex;
+  height: fit-content;
+  width: fit-content;
+
+}
+
+.hr {
+  display: flex;
+  background-color:blueviolet;
+  margin-top: -1em;
+  margin-bottom: 1em;
+}
+
+.image {
+  height: 512px;
+  width: 512px;
+  border: 0.5em solid black;
+}
+
+
+
+
+
+
+/* /signup */
+
+.form-signup, .form-login, .form-contact {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin-top: 4em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.signup, .login-form, .contact-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.signup-heading, .login-heading, .contact-heading {
+  font-size: 4em;
+  margin-bottom: 0.5em;
+}
+
+.signup-inputs, .contact-inputs {
+  display: flex;
+  flex-direction: column;
+  /* margin-left: 0.3em; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+
+}
+
+#username, #email, #password, #confirm_password, #name, #message {
+  display: flex;
+  width: 24em;
+  height: 2.5em;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  border-radius: 0%;
+  border: 1px solid black;
+  font-size: 16px;
+  text-indent: 1em;
+}
+
+#message {
+  height: 15em;
+  padding: 1em;
+}
+
+.signup-submit, .login-submit, .contact-submit {
+  height: 4em;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  border: none;
+  border-radius: 2em;
+  font-family: "Aboreto", sans-serif;
+}
+
+/* Login */
+
+.login-heading {
+  text-align: center;
+  margin-bottom: 0.25em;
+}
+
+
+/* About */
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+.about .head {
+  display: flex;
+  /* background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("/public/content/design/DALL·E\ 2022-09-12\ 09.19.03\ -\ modern\ oil\ painting\ of\ a\ beige\ wall.png"); */
+  height: 400px;
+  width: 100%;
+  justify-content: center;
+}
+
+.about .header {
+  display: flex;
+  color: white;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 4em;
+  font-weight: 400;
+}
+
+.about .content {
+  display: flex;
+  background-color: rgba(240, 240, 240, 0.9);
+  padding-top: 2em;
+  height: fit-content;
+  padding-bottom: 3em;
+
+}
+
+.about-article {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+
+}
+
+.about-article h2 {
+  font-size: 3em;
+  font-weight: 400;
+}
+
+.about-article p {
+  font-size: 1.25em;
+  font-weight: 300;
+}
+
+.content .head {
+  display: flex;
+}
+
+
+/* Marketplace */
+
+.market {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.marketplace {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(230, 230, 230, 0.9);
+}
+
+.marketplace-heading {
+  /* background: url('/public/content/design/DALL·E\ 2022-09-12\ 09.28.28\ -\ modern\ oil\ painting\ of\ a\ black\ night\ sky.png'); */
+  background-position: center;
+  height: 250px;
+}
+
+
+.marketplace-header {
+  display: flex;
+  justify-content: center;
+  font-family: 'Anek Telugu', sans-serif;
+  font-weight: 300;
+  font-size: 2.5em;
+  padding: 1em;
+  color: white;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.marketplace-header-link {
+  text-decoration: none;
+  color: white;
+}
+
+.marketplace-menu {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.marketplace-menu a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menu-dropdown {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0;
+
+}
+
+.menu-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.menu-style:hover .menu-dropdown-content {
+  display: block;
+}
+.menu-medium:hover .menu-dropdown-content {
+  display: block;
+}
+
+.menu-dropdown-content a {
+  float: none;
+  font-family: Montserrat, sans-serif;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.menu-dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.menu-style, .menu-medium {
+  overflow: hidden;
+  font-family: 'Aboreto', sans-serif;
+}
+
+.menu-style:hover, .menu-medium:hover {
+  background-color: rgba(127, 0, 256, 0.2);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: end;
+
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.item {
+  display: flex;
+  border: 25px solid;
+  border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='75'%3E%3Cg fill='none' stroke='%23AAAAAA' stroke-width='2'%3E%3Cpath d='M1 1h73v73H1z'/%3E%3Cpath d='M8 8h59v59H8z'/%3E%3Cpath d='M8 8h16v16H8zM51 8h16v16H51zM51 51h16v16H51zM8 51h16v16H8z'/%3E%3C/g%3E%3Cg fill='%23B88846'%3E%3Ccircle cx='16' cy='16' r='2'/%3E%3Ccircle cx='59' cy='16' r='2'/%3E%3Ccircle cx='59' cy='59' r='2'/%3E%3Ccircle cx='16' cy='59' r='2'/%3E%3C/g%3E%3C/svg%3E") 30;
+  width: 23em;
+  height: 23em;
+  margin: 2em;
+  margin-top: 0;
+
+}
+
+.item-link {
+  display: flex;
+  margin-left: -0.09em;
+}
+
+.break {
+  flex-basis: 0%;
+  height: 10px;
+}
+
+.item-image {
+  display: flex;
+  width: 23.35em;
+  height: 23.4em;
+  margin-top: -0.1em;
+  border: 2px solid black;
+}
+
+/* Item page */
+
+.item-heading {
+  display: flex;
+  margin-bottom: 15em;
+  justify-content: center;
+}
+
+.item-display {
+  display: flex;
+  height: 512px;
+  width: 512px;
+  margin-top: 7em;
+  margin-left: 3em;
+  border: 10px solid white;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5em;
+  margin-top: 25em;
+  color: white;
+}
+
+.item-info-h1 {
+  display: flex;
+  font-size: 3em;
+  font-weight: 400;
+}
+
+.item-info-price-canvas {
+  display: none;
+
+}
+
+.item-info-price-digital {
+  display: none;
+
+}
+
+.item-info-hr {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.item-info-type {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+}
+
+.item-info-select {
+  height: 3em;
+  width: 30em;
+  border-radius: 2em;
+  text-indent: 2em;
+  font-size: 1em;
+}
+
+.item-cart {
+  display: flex;
+  margin-top: 6em;
+
+
+}
+
+.item-cart-button {
+  height: 4em;
+  width: 25em;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  border: none;
+  border-radius: 3em;
+  font-size: 24px;
+
+}
+
+.item-cart-button:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.6);
+
+
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.footer .copyright, .footer .flask, .footer .notice {
+  padding-left: 12em;
+  padding-right: 12em;
+  overflow:auto;
+  font-size: 1em;
+ 
+}
+
+/* User Profile */
+
+.account {
+  display: flex;
+  background-color: rgba(240, 240, 240, 0.9);
+  height: 400px;
+  flex-direction: column;
+}
+
+.account .heading {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.account .details, .account .orders  {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  flex-direction: column;
+}
+
+.details h2, .orders h2 {
+  display: flex;
+  flex-direction: column;
+  font-size: 2em;
+}
+
+.details ul li {
+  list-style-type:none;
+  font-family: 'Anek Telugu', sans-serif;
+  font-size: 1em;
+}
+
+/* Cart */
+
+.cart {
+  background-color: rgba(230, 230, 230, 0.9);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.cart h1 {
+  text-align: center;
+}
+
+.cart-items {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 4em;
+  padding: 2em;
+}
+
+.cart-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.cart-info {
+  padding-left: 2em;
+}
+
+.cart-price p {
+  display: flex;
+  margin-left: 29em;
+  width: fit-content;
+}
+
+.checkout {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.checkout button {
+  margin: 2em;
+  padding: 0.5em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.85);
+  height: 3em;
+  width: 10em;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 1.5em;
+
+}
+

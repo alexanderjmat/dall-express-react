@@ -1,0 +1,35 @@
+.Home {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;     
+}
+
+.Home__Welcome {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+    background-color: black;
+}
+
+.Home__Welcome h1 {
+    font-size: 4em ;
+    color: white;
+}
+.Home__Welcome h3 {
+    font-size: 2.5em ;
+    margin-top: 5em;
+    color: white;
+    font-weight: 400;
+}
+
+.Home__NewArt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
